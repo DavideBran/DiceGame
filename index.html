@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style -->
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <title>Dice Game</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Dice Game</h1>
+    </div>
+
+    <div class="dice-container player-container">
+        
+        <button data-text="Awesome" class="button" onclick="playerSelect(1)">
+            <span class="actual-text">&nbsp;Player1&nbsp;</span>
+            <span class="hover-text" aria-hidden="true">&nbsp;Player1&nbsp;</span>
+        </button>
+
+        <div class="dice-1 dice">
+            <div class="dot-4 dot sx"></div>
+            <div class="dot-5 dot sx"></div>
+            <div class="dot-6 dot sx"></div>
+            <div class="dot-1 dot sx"></div>
+            <div class="dot-2 dot sx"></div>
+            <div class="dot-3 dot sx"></div>
+            <div class="dot middle-dot sx preset"></div>
+        </div>
+        <div class="dice-2 dice">
+            <div class="dot-4 dot dx"></div>
+            <div class="dot-5 dot dx"></div>
+            <div class="dot-6 dot dx"></div>
+            <div class="dot-1 dot dx"></div>
+            <div class="dot-2 dot dx"></div>
+            <div class="dot-3 dot dx"></div>
+            <div class="dot middle-dot dx preset"></div>
+        </div>
+
+        <button data-text="Awesome" class="button" onclick="playerSelect(2)">
+            <span class="actual-text">&nbsp;Player2&nbsp;</span>
+            <span class="hover-text" aria-hidden="true">&nbsp;Player2&nbsp;</span>
+        </button>
+
+        
+    </div>
+
+    <section id="roll-btn">
+        <div class="btn-container">
+            <button onclick="rollDice()"> Roll </button>
+        </div>
+    </section>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
